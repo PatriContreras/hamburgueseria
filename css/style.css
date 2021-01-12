@@ -110,16 +110,38 @@ header nav .hamburguesa div {
     width: 2em;
 }
 
-
-
-
-
-
-
-
-
-
 /* FIN DEL HEADER */
+
+
+
+
+/* INICIO DEL MAIN */
+
+
+
+
+/* INICIO DEL FOOTER */
+
+footer {
+    background-color: var(--colorsecundario);
+    padding: var(--margingrid);
+}
+
+footer .container div {
+    display: flex;
+    justify-content: center;
+}
+
+footer .container a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .container a span {
+    padding: 0 10px 0 10px;
+}
+
+/* FIN DEL FOOTER */
 
 
 /* MEDIA QUERIES */
@@ -156,6 +178,17 @@ header nav .hamburguesa div {
 
 }
 
+/* MEDIA QUERIES FOOTER  */
 
+@media(min-width: 768px) {
+    footer .container div {
+        justify-content: start;
+    }
+}
 
+@media(min-width: 1004px) {
+    footer .container div {
+        justify-content: start;
+    }
+}
 
