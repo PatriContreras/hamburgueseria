@@ -10,6 +10,8 @@ font-family: 'Montserrat', sans-serif; */
 
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
 }
 
 img {
@@ -118,11 +120,46 @@ header nav .hamburguesa div {
 /* INICIO DEL MAIN */
 
 
+/* section div a i {
+    color: var(--colorprincipal);
+    font-size: 250%;
+    float: right;
+    display: inline-block;
+    padding: 0 10px 10px 0;
+} */
 
 
 /* INICIO DEL FOOTER */
 
 footer {
+    background-color: var(--colorsecundario);
+    padding: var(--margingrid) 0px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    font-size: 250%;
+}
+
+/* footer {
     background-color: var(--colorsecundario);
     padding: var(--margingrid);
 }
@@ -139,7 +176,8 @@ footer .container a {
 
 footer .container a span {
     padding: 0 10px 0 10px;
-}
+} */
+
 
 /* FIN DEL FOOTER */
 
@@ -154,6 +192,10 @@ footer .container a span {
 
     header .nav-top a i {
         font-size: 120%;
+    }
+
+    footer {
+        text-align: left;
     }
 }
 
@@ -180,7 +222,7 @@ footer .container a span {
 
 /* MEDIA QUERIES FOOTER  */
 
-@media(min-width: 768px) {
+/* @media(min-width: 768px) {
     footer .container div {
         justify-content: start;
     }
@@ -190,5 +232,5 @@ footer .container a span {
     footer .container div {
         justify-content: start;
     }
-}
+} */
 
