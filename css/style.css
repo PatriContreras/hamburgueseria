@@ -161,7 +161,7 @@ footer a:hover {
     display: block;
     color: var(--colorprincipal);
     position: fixed;
-    bottom: 60px;
+    bottom: 5%;
     right: 10px;
     font-size: 250%;
 }
@@ -334,15 +334,43 @@ main section p {
 }
 
 
-
-
-
-
-
 /* FIN OUR SERVICES */
 
 
+/* INICIO ABOUT US  */
 
+main #aboutus .flex .column {
+    margin: var(--margingrid) 0;
+    
+}
+
+main #aboutus .column h3 {
+    font-weight: 700;
+    font-size: 110%;
+}
+
+main #aboutus .column h4 {
+    margin: 0.8em 0;
+    color: var(--colorprincipal);
+}
+
+main #aboutus .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
+    transform: rotateZ(0deg);
+
+}
+
+/* FIN ABOUT US  */
 
 /* MEDIA QUERIES */
 
@@ -356,12 +384,24 @@ main section p {
         grid-column: 1/3;
     }
 
+    main #aboutus .imagen {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     main #ourservices .grid article {
         border-bottom: none;
         border-left: 1px solid #aaa;
         padding: var(--margingrid);
     }
     
+    main #aboutus .flex {
+        display: flex;
+    }
+
+    main #aboutus .imagen {
+        width: 80%;
+    }
 
 }
 
@@ -386,6 +426,10 @@ main section p {
 
     main #ourservices .grid article:last-child {
         grid-column: 3/4;
+    }
+
+    main #aboutus {
+        margin-bottom: 3em;
     }
 }
 
