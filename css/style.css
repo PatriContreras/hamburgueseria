@@ -261,13 +261,13 @@ footer .container a span {
 /* INICIO OUR SERVICES */
 
 main section {
-    padding: calc(var(--margingrid)*3) var(--margingrid);
+    padding: calc(var(--margingrid)*3) var(--margingrid) calc(var(--margingrid)*5) var(--margingrid);
 }
 
 main section h2 {
     color: black;
-    font-size: var(--fuentesecundaria);
-    font-size: 2em;
+    font-family: var(--fuentesecundaria);
+    font-size: 2.5em;
     text-align: center;
 }
 
@@ -295,6 +295,48 @@ main section .underline span {
     font-weight: 700;
 }
 
+main #ourservices .grid {
+    display: grid;
+}
+
+main #ourservices .grid article {
+    padding: calc(var(--margingrid)*2) 0;
+    border-bottom: 1px solid #aaa;
+}
+
+main #ourservices .grid article div i {
+    color: var(--colorprincipal);
+    font-size: 150%;
+    border: 1px solid var(--colorprincipal);
+    padding: 0.5em;
+}
+
+main #ourservices .grid article h3 {
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 110%;
+}
+
+main section p {
+    color: #666;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.enlace {
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
+}
+
+
+
+
+
 
 
 /* FIN OUR SERVICES */
@@ -303,6 +345,26 @@ main section .underline span {
 
 
 /* MEDIA QUERIES */
+
+@media(min-width: 600px) {
+    main #ourservices .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--margingrid);
+    }
+
+    main #ourservices .grid article:last-child {
+        grid-column: 1/3;
+    }
+
+    main #ourservices .grid article {
+        border-bottom: none;
+        border-left: 1px solid #aaa;
+        padding: var(--margingrid);
+    }
+    
+
+}
+
 
 @media(min-width: 768px) {
     header .nav-top a span {
@@ -316,6 +378,14 @@ main section .underline span {
 
     footer {
         text-align: left;
+    }
+
+    main #ourservices .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main #ourservices .grid article:last-child {
+        grid-column: 3/4;
     }
 }
 
@@ -339,6 +409,15 @@ main section .underline span {
     }
 
 }
+
+
+
+
+
+
+
+
+
 
 /* MEDIA QUERIES FOOTER  */
 
