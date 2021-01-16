@@ -235,6 +235,7 @@ footer .container a span {
 
 .boton:hover {
     background: transparent;
+    color: var(--colorprincipal);
 }
 
 .boton:hover i {
@@ -406,20 +407,47 @@ main #ourblogs .container h3 {
 
 main #ourblogs .container h4 {
     font-weight: 700;
-    margin: 0.8em 0;
+    margin: 1em 0;
     color: var(--colorprincipal);
 }
+
+main #ourblogs .container p  {
+    color: #666;
+    line-height: 1.5;
+}
+
+main #ourblogs .container .column1 {
+    position: relative;
+
+}
+
+
+main #ourblogs .container .column1 .fecha {
+    background-color: var(--colorprincipal);
+    opacity: 0.7;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+
+}
+
+main #ourblogs .container .column1 .fecha p {
+    color: white;
+    font-size: 150%;
+    font-weight: 700;
+    padding: 4px;
+    
+    
+}
+
+
+
 
 main #ourblogs .container img {
     width: 100%;
     display: inline-block;
     margin-bottom: var(--margingrid);
 }
-
-main #ourblogs .container .grid a {
-    
-}
-
 
 
 main #ourblogs .container .boton {
@@ -428,6 +456,7 @@ main #ourblogs .container .boton {
     color: var(--colorprincipal);
     text-decoration: none;
     border: none;
+    padding: 0;
 }
 
 
@@ -465,6 +494,10 @@ main #ourblogs .container .boton {
 
     main #aboutus .imagen {
         width: 80%;
+    }
+
+    main #ourblogs .container .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
