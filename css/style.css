@@ -123,19 +123,6 @@ header nav .hamburguesa div {
 
 
 
-
-/* INICIO DEL MAIN */
-
-
-/* section div a i {
-    color: var(--colorprincipal);
-    font-size: 250%;
-    float: right;
-    display: inline-block;
-    padding: 0 10px 10px 0;
-} */
-
-
 /* INICIO DEL FOOTER */
 
 footer {
@@ -166,27 +153,6 @@ footer a:hover {
     font-size: 250%;
 }
 
-/* footer {
-    background-color: var(--colorsecundario);
-    padding: var(--margingrid);
-}
-
-footer .container div {
-    display: flex;
-    justify-content: center;
-}
-
-footer .container a {
-    color: white;
-    text-decoration: none;
-}
-
-footer .container a span {
-    padding: 0 10px 0 10px;
-} */
-
-
-/* FIN DEL FOOTER */
 
 /* INICIO DEL HERO */
 
@@ -458,8 +424,50 @@ main #ourblogs .container .boton {
 }
 
 
-
 /* FIN SECCION BLOG */
+
+/* INICIO SECCION MENU  */
+
+main #menu {
+    background-color: var(--colorsecundario);
+    max-width: 100%;
+}
+
+main #menu .container {
+    margin: calc(var(--margingrid)*4);
+}
+
+main #menu .container h2 {
+    color: white;
+}
+
+main #menu .container .underline {
+    margin-top: var(--margingrid);
+    margin-bottom: calc(var(--margingrid)*3);
+}
+
+main #menu .menu a {
+    text-decoration: none;
+    font-size: var(--fuenteprincipal);
+    color: white;
+    line-height: 2;
+    font-size: 0.75em;
+    padding: var(--margingrid);
+
+    
+}
+
+main #menu .menu .activo   {
+    background-color: var(--colorprincipal);
+    border-radius: 3px;
+}
+
+
+
+
+
+
+/* FIN SECCION MENU  */
 
 
 
