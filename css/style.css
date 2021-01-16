@@ -416,31 +416,29 @@ main #ourblogs .container p  {
     line-height: 1.5;
 }
 
-main #ourblogs .container .column1 {
+main #ourblogs .container .blog-column {
     position: relative;
 
 }
 
 
-main #ourblogs .container .column1 .fecha {
+main #ourblogs .container .blog-column .fecha {
     background-color: var(--colorprincipal);
-    opacity: 0.7;
-    width: 80px;
-    height: 80px;
+    opacity: 0.8;
+    width: 70px;
+    height: 70px;
     position: absolute;
 
 }
 
-main #ourblogs .container .column1 .fecha p {
+main #ourblogs .container .blog-column .fecha p {
     color: white;
-    font-size: 150%;
-    font-weight: 700;
+    font-size: 120%;
+    font-weight: 600;
     padding: 4px;
-    
+    text-align: center;
     
 }
-
-
 
 
 main #ourblogs .container img {
