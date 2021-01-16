@@ -372,6 +372,70 @@ main #aboutus .imagen:hover .marco, main #aboutus .imagen:hover .marco img {
 
 /* FIN ABOUT US  */
 
+
+/* INICIO SECCION BLOG */
+
+main #ourblogs .container .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: var(--margingrid);
+
+}
+
+main #ourblogs .container .underline {
+    margin-bottom: calc(var(--margingrid)*3);
+}
+
+main #ourblogs .container .underline  hr {
+    top: -2px;
+}
+
+
+main #ourblogs h2 {
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: calc(var(--margingrid)*0.40);
+}
+
+
+main #ourblogs .container h3 {
+    font-size: 180%;
+    margin-bottom: var(--margingrid);
+}
+
+main #ourblogs .container h4 {
+    font-weight: 700;
+    margin: 0.8em 0;
+    color: var(--colorprincipal);
+}
+
+main #ourblogs .container img {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: var(--margingrid);
+}
+
+main #ourblogs .container .grid a {
+    
+}
+
+
+
+main #ourblogs .container .boton {
+    font-weight: 700;
+    background-color: white;
+    color: var(--colorprincipal);
+    text-decoration: none;
+    border: none;
+}
+
+
+
+/* FIN SECCION BLOG */
+
+
+
 /* MEDIA QUERIES */
 
 @media(min-width: 600px) {
