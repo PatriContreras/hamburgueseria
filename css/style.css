@@ -437,12 +437,14 @@ main #menu .container {
     margin: calc(var(--margingrid)*4);
 }
 
+
+
 main #menu .container .offers {
     margin: var(--margingrid) 0;
 }
 
 main #menu .container .grid {
-    padding: 0 10px;
+    padding: var(--margingrid) var(--margingrid);
 }
 
 main #menu .container h2 {
@@ -456,14 +458,14 @@ main #menu .container h3 {
     font-weight: 700;
 }
 
-/* main #menu .container .underline {
-    margin-top: var(--margingrid);
-    margin-bottom: calc(var(--margingrid)*3);
-} */
+main #menu .container .underline {
+    margin-top: calc(var(--margingrid)*0.5);
+    margin-bottom: calc(var(--margingrid)*2);
+}
 
 main #menu .container .offers .underline hr {
     top: 0;
-    width: 70%;
+    width: 50%;
 }
 
 main #menu .container .offers .underline {
@@ -475,18 +477,35 @@ main #menu ul {
     line-height: 2;
 }
 
+main #menu .container .grid .column {
+    position: relative;
+    margin-right: var(--margingrid);
+    margin-top: var(--margingrid);
+}
+
 
 main #menu .container .grid h4 {
     color: white;
+    font-size: 0.75em;
     font-family: var(--fuenteprincipal);
     font-weight: 700;
     padding: var(--margingrid) 0;
+    
+}
+
+main #menu .container .grid span {
+    color: var(--colorprincipal);
+    font-weight: 700;
+    float: right;
+    margin-left: 2%
+    
+    
 }
 
 main #menu .container p {
     color: white;
     font-family: var(--fuenteprincipal);
-    font-size: 0.75em;
+    font-size: 0.65em;
     
 }
 
@@ -503,6 +522,7 @@ main #menu .menu a {
     line-height: 2;
     font-size: 0.75em;
     padding: var(--margingrid);
+    margin-top: -10px;
 
     
 }
@@ -516,7 +536,10 @@ main #menu .menu .activo   {
         color: var(--colorprincipal);
         background-color: transparent;
         border: none;
-        padding: var(--margingrid) 0 ;
+        padding: var(--margingrid) 0;
+        margin-top: -10px;
+        font-size: 0.6em;
+        margin-bottom: 30px;
     }
 
 
