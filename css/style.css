@@ -300,6 +300,11 @@ main section p {
     transform: rotateY(180deg);
 }
 
+.fa-long-arrow-alt-right:hover {
+    transform: translateX(5px);
+    transition: 0.5s;
+}
+
 
 /* FIN OUR SERVICES */
 
