@@ -1,9 +1,6 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
 
-/* font-family: 'Handlee', cursive;
-font-family: 'Montserrat', sans-serif; */
-
 * {
     box-sizing: border-box;
 }
@@ -74,12 +71,11 @@ header nav .container:after {
     content: "";
     clear: both;
     height: 0;
-} /* PARA ELIMINAR FLOTACIONES */
+}
 
 
 header nav .hamburguesa {
     cursor: pointer;
-    
 }
 
 header .hamburguesa {
@@ -122,7 +118,6 @@ header nav .hamburguesa div {
 /* FIN DEL HEADER */
 
 
-
 /* INICIO DEL FOOTER */
 
 footer {
@@ -152,6 +147,8 @@ footer a:hover {
     right: 10px;
     font-size: 250%;
 }
+
+/* FIN DEL FOOTER */
 
 
 /* INICIO DEL HERO */
@@ -221,7 +218,6 @@ footer a:hover {
     font-size: 2em;
 }
 
-
 /* FIN DEL HERO */
 
 
@@ -245,7 +241,7 @@ main section h2 span {
 main section .underline {
     position: relative;
     width: 100px;
-    margin: 0 auto; /* para centrar un div */
+    margin: 0 auto;
     text-align: center;
     margin-bottom: var(--margingrid);
 }
@@ -305,7 +301,6 @@ main section p {
     transition: 0.5s;
 }
 
-
 /* FIN OUR SERVICES */
 
 
@@ -363,13 +358,11 @@ main #ourblogs .container .underline  hr {
     top: -2px;
 }
 
-
 main #ourblogs h2 {
     font-style: italic;
     font-weight: 700;
     margin-bottom: calc(var(--margingrid)*0.40);
 }
-
 
 main #ourblogs .container h3 {
     font-size: 180%;
@@ -428,8 +421,8 @@ main #ourblogs .container .boton {
     padding: 0;
 }
 
-
 /* FIN SECCION BLOG */
+
 
 /* INICIO SECCION MENU  */
 
@@ -441,7 +434,6 @@ main #menu {
 main #menu .container {
     margin: calc(var(--margingrid)*4);
 }
-
 
 
 main #menu .container .offers {
@@ -537,19 +529,17 @@ main #menu .menu .activo   {
     border-radius: 3px;
 }
 
-  main #menu .grid .boton {
-        color: var(--colorprincipal);
-        background-color: transparent;
-        border: none;
-        padding: var(--margingrid) 0;
-        margin-top: -10px;
-        font-size: 0.6em;
-        margin-bottom: 30px;
-    }
-
+main #menu .grid .boton {
+    color: var(--colorprincipal);
+    background-color: transparent;
+    border: none;
+    padding: var(--margingrid) 0;
+    margin-top: -10px;
+    font-size: 0.6em;
+    margin-bottom: 30px;
+}
 
 /* FIN SECCION MENU  */
-
 
 
 /* MEDIA QUERIES */
@@ -588,52 +578,54 @@ main #menu .menu .activo   {
     }
 
 
-main #menu .grid-general {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-}
-main #menu .grid-izquierda {
-    grid-column: 1;
-    grid-row: 1/3;
-}
-main #menu .grid-1{
-    grid-column: 2/4;
-    grid-row: 1;
-}
-main #menu .grid-2{
-    grid-column: 2/4;
-    grid-row: 2;
-}
-main #menu .grid-3{
-    grid-column: 2/4;
-    grid-row: 3;
-}
+    main #menu .grid-general {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-main #menu .container {
-    margin: 0 auto;
+    main #menu .grid-izquierda {
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+
+    main #menu .grid-1{
+        grid-column: 2/4;
+        grid-row: 1;
+    }
+
+    main #menu .grid-2{
+        grid-column: 2/4;
+        grid-row: 2;
+    }
+
+    main #menu .grid-3{
+        grid-column: 2/4;
+        grid-row: 3;
+    }
+
+    main #menu .container {
+        margin: 0 auto;
+    }
+
+    main #menu .container .grid {
+        margin-left: 20px;
+    }
+
+    main #menu .container .grid img {
+        display: inline;
+        position: none;
+        width: 30%;
+        float: left;
+        margin-right: 20px;
+    }
+
+    main #menu .container .grid .column {
+        display: inline;
+
+    }
+
 }
-
-main #menu .container .grid {
-    margin-left: 20px;
-}
-
-main #menu .container .grid img {
-    display: inline;
-    position: none;
-    width: 30%;
-    float: left;
-    margin-right: 20px;
-}
-
-main #menu .container .grid .column {
-    display: inline;
-
-}
- 
-
-}
-
 
 @media(min-width: 768px) {
     header .nav-top a span {
@@ -680,29 +672,4 @@ main #menu .container .grid .column {
         border: 0px;
         padding: 0.5em calc(var(--margingrid));
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-/* MEDIA QUERIES FOOTER  */
-
-/* @media(min-width: 768px) {
-    footer .container div {
-        justify-content: start;
-    }
-}
-
-@media(min-width: 1004px) {
-    footer .container div {
-        justify-content: start;
-    }
-} */
-
