@@ -1,0 +1,27 @@
+footer {
+    background-color: var(--colorsecundario);
+    padding: var(--margingrid) 0px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 5%;
+    right: 10px;
+    font-size: 250%;
+}

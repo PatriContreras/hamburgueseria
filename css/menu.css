@@ -1,0 +1,112 @@
+main #menu {
+    background-color: var(--colorsecundario);
+    max-width: 100%;
+}
+
+main #menu .container {
+    margin: calc(var(--margingrid)*4);
+}
+
+
+main #menu .container .offers {
+    margin: var(--margingrid) 0;
+}
+
+main #menu .container .grid {
+    padding: var(--margingrid) var(--margingrid);
+}
+
+main #menu .container h2 {
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+main #menu .container h3 {
+    color: white;
+    font-family: var(--fuenteprincipal);
+    font-weight: 700;
+}
+
+main #menu .container .underline {
+    margin-top: calc(var(--margingrid)*0.5);
+    margin-bottom: calc(var(--margingrid)*2);
+}
+
+main #menu .container .offers .underline hr {
+    top: 0;
+    width: 50%;
+}
+
+main #menu .container .offers .underline {
+    margin: 0 0;
+}
+
+main #menu ul {
+    padding: var(--margingrid) 0;
+    line-height: 2;
+}
+
+main #menu .container .grid .column {
+    position: relative;
+    margin-right: var(--margingrid);
+    margin-top: var(--margingrid);
+}
+
+
+main #menu .container .grid h4 {
+    color: white;
+    font-size: 0.70em;
+    font-family: var(--fuenteprincipal);
+    font-weight: 700;
+    padding: var(--margingrid) 0;
+    
+}
+
+main #menu .container .grid span {
+    color: var(--colorprincipal);
+    font-weight: 700;
+    float: right;
+    margin-left: 2%
+    
+    
+}
+
+main #menu .container p {
+    color: white;
+    font-family: var(--fuenteprincipal);
+    font-size: 0.65em;
+    
+}
+
+main #menu .container .offers p {
+    margin-top: calc(var(--margingrid)*2);
+    margin-bottom: calc(var(--margingrid));
+}
+
+
+main #menu .menu a {
+    text-decoration: none;
+    font-size: var(--fuenteprincipal);
+    color: white;
+    line-height: 2;
+    font-size: 0.75em;
+    padding: var(--margingrid);
+    margin-top: -10px;
+
+    
+}
+
+main #menu .menu .activo   {
+    background-color: var(--colorprincipal);
+    border-radius: 3px;
+}
+
+main #menu .grid .boton {
+    color: var(--colorprincipal);
+    background-color: transparent;
+    border: none;
+    padding: var(--margingrid) 0;
+    margin-top: -10px;
+    font-size: 0.6em;
+    margin-bottom: 30px;
+}

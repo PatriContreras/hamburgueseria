@@ -1,0 +1,79 @@
+
+main #ourblogs .container .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: var(--margingrid);
+
+}
+
+main #ourblogs .container .underline {
+    margin-bottom: calc(var(--margingrid)*3);
+}
+
+main #ourblogs .container .underline  hr {
+    top: -2px;
+}
+
+main #ourblogs h2 {
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: calc(var(--margingrid)*0.40);
+}
+
+main #ourblogs .container h3 {
+    font-size: 180%;
+    margin-bottom: var(--margingrid);
+}
+
+main #ourblogs .container h4 {
+    font-weight: 700;
+    margin: 1em 0;
+    color: var(--colorprincipal);
+}
+
+main #ourblogs .container p  {
+    color: #666;
+    line-height: 1.5;
+}
+
+main #ourblogs .container .blog-column {
+    position: relative;
+
+}
+
+
+main #ourblogs .container .blog-column .fecha {
+    background-color: var(--colorprincipal);
+    opacity: 0.8;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+
+}
+
+main #ourblogs .container .blog-column .fecha p {
+    color: white;
+    font-size: 120%;
+    font-weight: 600;
+    padding: 4px;
+    text-align: center;
+    
+}
+
+
+main #ourblogs .container img {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: var(--margingrid);
+}
+
+
+main #ourblogs .container .boton {
+    font-weight: 700;
+    background-color: white;
+    color: var(--colorprincipal);
+    text-decoration: none;
+    border: none;
+    padding: 0;
+}

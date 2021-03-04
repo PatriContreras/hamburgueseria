@@ -1,0 +1,76 @@
+
+header .nav-top {
+    background-color: var(--colorsecundario);
+    padding: var(--margingrid) 0px;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+header .nav-top a span {
+    display: none;
+}
+
+header .nav-top a i {
+    font-size: 150%;
+}
+
+header nav {
+    padding: var(--margingrid);
+}
+
+header nav .container:after {
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+
+header nav .hamburguesa {
+    cursor: pointer;
+}
+
+header .hamburguesa {
+    float: right;
+}
+
+header .logo {
+    float: left;
+    max-width: 100px;
+}
+
+header .menu {
+    padding-top: 60px;
+    text-align: center;
+}
+
+header .menu a {
+    text-decoration: none;
+    display: block;
+    padding: calc(var(--margingrid)*1.25);
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+header .menu li:last-child a {
+    border-bottom: 0px;
+}
+
+header .menu .activo {
+    color: var(--colorprincipal);
+}
+
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: calc(var(--margingrid)*0.75);
+    width: 2em;
+}
